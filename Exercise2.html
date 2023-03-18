@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise2</title>
+    <style>
+        *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    nav{
+      width: 100%;
+      position: sticky !important;
+      left: 0;
+      top: 0;
+      box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+      z-index: 10;
+    }
+    .navbar-brand{
+      font-weight: 600;
+    }
+    .nav-link{
+      color: rgb(255, 255, 255) !important;
+      border-bottom: 1px solid transparent;
+    }
+    .nav-link:hover{
+      border-bottom: 1px solid rgb(251, 251, 83);
+    }
+    .btn{
+      background-color: rgb(251, 255, 0) !important;
+      font-weight: 300 !important;
+      background-attachment: fixed;
+    }
+    .dropdown-item{
+      color: rgb(255, 255, 255) !important;
+     border-bottom:1px solid rgb(251, 251, 83) ;
+    }
+    .dropdown-item:hover{
+      border-bottom: 1px solid rgb(251, 251, 83);
+    }
+    #home{
+      width: 100%;
+      height: 100vh;
+      background-image: url("51364.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+    }
+    #btn2 button{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn2 button:hover{
+    background-color: rgba(251, 251, 83);
+}
+#tpc{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#tpc:hover{
+    transform: translateY(-10px);
+}
+#c p{
+    font-weight: bold;
+}
+#btn3{
+    text-align: center;
+}
+#btn3 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn3 button:hover{
+    background-color: rgba(251, 251, 83);
+}
+@media screen and (max-width:895px){
+    #btn3 button{
+        width: 100px;
+    }
+}
+#btn4 button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn4 button:hover{
+    background-color: rgba(251, 251, 83);
+}
+#footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    color: rgba(238,224,208);
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+          <img src="mugiwara.png" width="60" height="50">
+        </a>
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                  <li><a class="dropdown-item" href="#service">Services</a></li>
+                  <li><a class="dropdown-item" href="#products">Products</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section id="home">
+      </section>
+      <div class="container" id="service">
+        <h3 class="text-center" style="padding-top: 30px;">SERVICES WE OFFER</h3>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="1.jpg" alt="" class="card image-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">CUSTOM MENUS</h5>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam vitae facere eius modi iure possimus, soluta ea inventore. Omnis!</p>
+                        <div id="btn2" class="text-center"><button>View More</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="2.jpg" alt="" class="card image-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">SMARTEST WAY</h5>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam vitae facere eius modi iure possimus, soluta ea inventore. Omnis!</p>
+                        <div id="btn2" class="text-center"><button>View More</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="3.jpg" alt="" class="card image-top" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">USER FRIENDLEY</h5>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam vitae facere eius modi iure possimus, soluta ea inventore. Omnis!</p>
+                        <div id="btn2" class="text-center"><button>View More</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="container" id="products">
+        <h3 class="text-center" style="margin-top: 50px;">TREANDLY PRODUCTS</h3>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="4.jpg" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Best Sofa</h3>
+                        <p class="card-text text-center">₹12000</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="5.jpg" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">New Sofa</h3>
+                        <p class="card-text text-center">₹10000</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="6.jpg" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">New Chair</h3>
+                        <p class="card-text text-center">₹1200</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="7.jpg" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h3 class="card-titel text-center">Modern Chair</h3>
+                        <p class="card-text text-center">₹2000</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+    <div class="container">
+        <h1 class="text-center" style="margin-top: 50px;">ABOUT</h1>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                    <img src="merry.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 py-3 py-md-0">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, saepe possimus quo, quasi animi natus nulla beatae neque soluta pariatur id ducimus eum, sed quis enim minima? Fugiat delectus quo optio nemo voluptatem ullam officiis neque exercitationem tenetur eum corporis quas in esse blanditiis, quasi animi nam eos! Tempora deleniti eligendi magni ex voluptatum ut dicta nemo et consequuntur distinctio quae atque porro inventore assumenda, nihil odio iusto accusamus libero error nam aut, at praesentium cum reiciendis. Possimus consequatur obcaecati at illum in dolores earum vero ipsum. Ipsam vitae adipisci corrupti totam vel consequuntur fugiat. Perferendis fuga doloremque tempora, in eos, voluptates iure, optio qui modi ex ea saepe. Eum perspiciatis, voluptates fugiat nesciunt corrupti minima aliquam repellat, ea quasi natus, recusandae aut nobis modi. Commodi, alias reiciendis reprehenderit hic soluta consectetur corporis accusantium placeat, totam minima nostrum magnam dolorum aut dolore, sapiente ea. Magni est quo ipsam nisi iste.</p>
+                <div id="btn4"><button>Read More...</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer id="footer">
+        <h1 class="text-center">Furniture</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ab?</p>
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-skype"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong><span>Furniture</span></strong>. All Rights Reserved
+        </div>
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
